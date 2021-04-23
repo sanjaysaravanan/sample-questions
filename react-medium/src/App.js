@@ -30,6 +30,20 @@ function App() {
         border: "1px solid",
       }}
     >
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "1000px",
+          marginBottom: "50px",
+        }}
+      >
+        {data.map((item, i) => (
+          <div>
+            <h4>{item.name}</h4>
+          </div>
+        ))}
+      </div>
       {data.map((item) => (
         <div
           style={{
